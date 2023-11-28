@@ -47,7 +47,7 @@ return await Deployment.RunAsync(() =>
       }
    });
 
-   var instanceCount = stackConfig.GetInt32("instanceCount") ?? 0;
+   var instanceCount = stackConfig.GetInt32("instanceCount") ?? 1;
    var instanceDnsNames = new List<Output<string>>();
 
    for(var i = 0; i < instanceCount; i++)
